@@ -172,6 +172,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        padding: 65px 0 180px;
+    }
+    .intro{
+        padding: 0;
     }
     .intro h2 {
         font-size: 3.5rem;
