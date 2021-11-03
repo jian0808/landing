@@ -1,0 +1,182 @@
+@import url('reset.css');
+@import url('common.css');
+
+.intro{
+    background-color: #009223;
+    padding: 140px 0 210px;
+    position: relative;
+}
+.intro h1 img{
+    width: 200px;
+}
+.obj{
+    position: absolute;
+}
+.obj01{
+    top: -20px;
+    left: 50px;
+    animation: fade-right 1.5s;
+}
+.obj02{
+    top: -120px;
+    right: -150px;
+    animation: fade-down 2s;
+}
+.obj03{
+    bottom: -35px;
+    left: -200px;
+    animation: fade-right2 2.5s;
+}
+.obj04{
+    bottom: -300px;
+    right: 70px;
+    animation: fade-up 2.5s;
+}
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        left: -999px;
+    }
+    50%{
+        opacity: 0;
+        left: -500px;
+    }
+    100%{
+        opacity: 1;
+        left: 50px;
+    }
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        top: -999px;
+    }
+    50%{
+        opacity: 0;
+        top: -600px;
+    }
+    100%{
+        opacity: 1;
+        top: -120px;
+    }
+}
+@keyframes fade-right2{
+    0%{
+        opacity: 0;
+        left: -999px;
+    }
+    50%{
+        opacity: 0;
+        left: -500px;
+    }
+    100%{
+        opacity: 1;
+        left: -200px;
+    }
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        bottom: -999px;
+    }
+    50%{
+        opacity: 0;
+        bottom: -500px;
+    }
+    100%{
+        opacity: 1;
+        bottom: -300px;
+    }
+}
+.intro h2{
+    font-size: 5.875rem;
+    color: #FFC20D;
+    letter-spacing: -4px;
+    padding-top: 60px;
+}
+.intro p{
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 25px;
+}
+
+/* 미디어쿼리 */
+@media (max-width:1440px){
+    /* 인트로 */
+    .obj>img{
+        width: 80%;
+    }
+    .obj01{
+        left: 0;
+    }
+    .obj04{
+        bottom: -270px;
+        right: 0;
+    }
+}
+@media (max-width: 1025px){
+    /* 인트로 */
+    .intro h2 {
+        font-size: 4rem;
+    }
+    .intro p {
+        font-size: 2rem;
+    }
+    .obj>img {
+        width: 75%;
+    }
+    .obj02 {
+        top: -120px;
+        right: -110px;
+    }
+    .obj04 {
+        bottom: -230px;
+    }
+    @keyframes fade-right{
+        0%{
+            opacity: 0;
+            left: -999px;
+        }
+        50%{
+            opacity: 0;
+            left: -500px;
+        }
+        100%{
+            opacity: 1;
+            left: 0;
+        }
+    }
+    @keyframes fade-up{
+        0%{
+            opacity: 0;
+            bottom: -999px;
+        }
+        50%{
+            opacity: 0;
+            bottom: -500px;
+        }
+        100%{
+            opacity: 1;
+            bottom: -230px;
+        }
+    }
+}
+@media (max-width: 769px){
+    /* 인트로 */
+    .obj{
+        display: none;
+    }
+    .content-intro{
+        background-image: url('../images/intro_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .intro h2 {
+        font-size: 3.5rem;
+    }
+    .intro p {
+        font-size: 1.750rem;
+    }
+}
