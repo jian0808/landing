@@ -3,7 +3,7 @@
 
 .intro{
     background-color: #009223;
-    padding: 140px 0 210px;
+    padding: 140px 0 220px;
     position: relative;
 }
 .intro h1 img{
@@ -108,7 +108,7 @@
         width: 80%;
     }
     .obj01{
-        left: 0;
+        left: -30px;
     }
     .obj04{
         bottom: -270px;
@@ -144,7 +144,7 @@
         }
         100%{
             opacity: 1;
-            left: 0;
+            left: -30px;
         }
     }
     @keyframes fade-up{
@@ -167,20 +167,50 @@
     .obj{
         display: none;
     }
-    .content-intro{
-        background-image: url('../images/intro_bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 65px 0 180px;
-    }
     .intro{
+        background: url('../images/intro_bg.png') no-repeat center;
+        background-size: cover;
         padding: 0;
     }
+    .content-intro{
+        padding: 15% 0 25%;
+    }
     .intro h2 {
-        font-size: 3.5rem;
+        font-size: 3.375rem;
     }
     .intro p {
-        font-size: 1.750rem;
+        font-size: 1.688rem;
     }
+}
+@media (max-width: 541px){
+    /* 인트로 */
+    .content-intro {
+        padding: 12% 0 21%;
+    }
+    .intro h1 img {
+        width: 150px;
+    }
+    .intro h2 {
+        font-size: 2.5rem;
+        padding-top: 35px;
+    }
+    .intro p {
+        font-size: 1.125rem;
+        padding-top: 12px;
+    }
+}
+@media (max-width: 415px){
+    /* 인트로 */
+    .intro h1 img {
+        width: 100px;
+    }
+    .intro h2 {
+        font-size: 1.875rem;
+        padding-top: 25px;
+    }
+    .intro p {
+        font-size: 0.875rem;
+        font-weight: 200;
+    }
+    
 }
