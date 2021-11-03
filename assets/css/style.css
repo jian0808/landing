@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('common.css');
 
+/* 인트로 */
 .intro{
     background-color: #009223;
     padding: 140px 0 220px;
@@ -8,6 +9,18 @@
 }
 .intro h1 img{
     width: 200px;
+}
+.intro h2{
+    font-size: 5.875rem;
+    color: #FFC20D;
+    letter-spacing: -4px;
+    padding-top: 60px;
+}
+.intro p{
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 25px;
 }
 .obj{
     position: absolute;
@@ -88,18 +101,55 @@
         bottom: -300px;
     }
 }
-.intro h2{
-    font-size: 5.875rem;
-    color: #FFC20D;
-    letter-spacing: -4px;
-    padding-top: 60px;
+
+/* 프로모션 */
+.promotion{
+    background-color: #FFE66E;
+    padding: 100px 0 60px;
 }
-.intro p{
-    font-size: 3rem;
-    color: #fff;
+.gift{
+    background: url('../images/reusable_bg.png') no-repeat;
+    background-size: contain;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.gift>img{
+    width: 60%;
+}
+.pro-text{
+    /* padding: 7% 0 10% 3%; */
+}
+.terms{
+    font-size: 1.5rem;
     letter-spacing: -1px;
-    padding-top: 25px;
+    padding-bottom: 30px;
 }
+.promotion .pro-text>img{
+    width: 195px;
+}
+.benefit{
+    font-size: 2.375rem;
+    letter-spacing: -2px;
+    padding-top: 7px;
+    white-space: nowrap;
+}
+.pro-text span{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.period{
+    background-color: #FFC20D;
+    font-size: 1.125rem;
+    padding: 8px 20px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+
+
 
 /* 미디어쿼리 */
 @media (max-width:1440px){
