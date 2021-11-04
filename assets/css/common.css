@@ -28,29 +28,8 @@ section{
     margin: 0 auto;
 }
 .container{
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 960px;
 }
-.row{
-    display: flex;
-}
-.row-center{
-    align-items: center;
-}
-.col-center{
-    justify-content: center;
-}
-.text-center{
-    text-align: center;
-}
-.albero-title{
-    font-size: 4rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-}
-.wrap{
-    flex-wrap: wrap;
-}
-.col-33{
-    width: 33.33%;
-}
+
+
+
