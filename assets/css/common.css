@@ -31,5 +31,14 @@ section{
     width: 960px;
 }
 
+@media (max-width:576px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+
 
 
