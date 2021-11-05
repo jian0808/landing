@@ -2,9 +2,6 @@
 @import url('common.css');
 
 
-img{
-    width: 100%;
-}
 /* 인트로 */
 .intro{
     background-color: #009223;
@@ -156,6 +153,7 @@ img{
 .main-product{
     background-color: #FBDD91;
     padding: 100px 0 60px;
+    z-index: 3;
 }
 .main-product h2{
     font-size: 3rem;
@@ -163,16 +161,25 @@ img{
     color: #865000;
     margin-bottom: 25px;
 }
+.main-product h2 br{
+    display: none;
+}
 .main-product h2 .text_border{
     text-shadow:-1px 0px 0px #009223,1px 0px 0px #009223,0px -1px 0px #009223,0px 1px 0px #009223;
     /* text-shadow: 0 0 2px #009223; */
-    color: #fff;
+    color: #fff;    
+    position: relative;
+    z-index: 3;
 }
 .text_border::after{
     content: "";
-    width: 100%;
-    height: 20px;
+    width: 102%;
+    height: 25px;
     background-color: #18AC4E;
+    position: absolute;
+    left: -5px;
+    bottom: 3px;
+    z-index: -1;
 }
 .video-wrap{
     width: 100%;
@@ -189,7 +196,27 @@ img{
     left: 0;
 }
 .ck-wrap{
-    padding-top: 70px;
+    padding: 70px 0;
+}
+.new-product{
+    position: relative;
+}
+.img-ani{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    animation: move 2s infinite;
+}
+@keyframes move{
+    0%{
+        top: 10px;
+    }
+    50%{
+        top: -10px;
+    }
+    100%{
+        top: 10px;
+    }
 }
 .label{
     width: 80px;
@@ -226,7 +253,6 @@ img{
     border-radius: 20px;
     font-size: 1.125rem;
     color: #fff;
-    /* line-height: 23px; */
     margin-left: 20px;
 }
 .desc{
@@ -313,6 +339,7 @@ img{
         }
     }
 }
+
 @media (max-width: 768px){
     /* 인트로 */
     .obj{
@@ -346,6 +373,25 @@ img{
     .pro-text{
         padding: 0 0 5%;
     }
+    /* 로스트치킨 */
+    .main-product {
+        padding: 75px 0 60px;
+    } 
+    .new-text{
+        padding-top: 48%;
+    }   
+    .ck-wrap {
+        padding-top: 70px;
+    }
+}
+@media (max-width: 992px){
+    /* 로스트치킨 */
+    .main-product h2 br{
+        display: block;
+    }
+    .main-product h2 {
+        line-height: 56px;
+    }
 }
 @media (max-width: 541px){
     /* 인트로 */
@@ -366,6 +412,49 @@ img{
     /* 프로모션 */
     .promotion {
         padding: 80px 0 50px;
+    }
+    /* 로스트치킨 */
+    .main-product h2 {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+    .text_border::after{
+        height: 18px;
+    }
+    .new-product{
+        text-align: center;
+    }
+    .new-product img{
+        width: 80%;
+    }
+    .en-name {
+        font-size: 0.938rem;
+    }
+    .roasted-ck {
+        font-size: 1.875rem;
+    }
+    .roasted-ck .Kcal{
+        font-size: 1rem;
+    }
+    .desc {
+        font-size: 1rem;
+        padding-bottom: 30px;
+    }
+    .price {
+        font-size: 1.250rem;
+    }
+    .price span {
+        font-size: 0.875rem;
+    }
+    .label{
+        width: 60px;
+        height: 60px;
+    }
+    .label::before{
+        width: 54px;
+        height: 54px;
+        top: 3px;
+        left: 3px;
     }
 }
 @media (max-width: 415px){
@@ -397,6 +486,17 @@ img{
         letter-spacing: -1px;
     }
     .period {
+        font-size: 0.875rem;
+    }
+}
+@media (max-width: 320px){
+    .main-product h2 {
+        font-size: 1.5rem;
+    }
+    .roasted-ck {
+        font-size: 1.375rem;
+    }
+    .roasted-ck .Kcal {
         font-size: 0.875rem;
     }
 }
