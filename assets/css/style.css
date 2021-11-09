@@ -322,14 +322,15 @@
 .container{
     position: relative;
 }
-.container .card{
+.container .box{
     position: relative;
-    width: 320px;
-    height: 450px;
+    /* width: 45%;
+    height: 450px; */
+    padding: 250px 0;
     background-color: #FBC31E;
     overflow: hidden;
 }
-.container .card::before{
+.container .box::before{
     content: "";
     position: absolute;
     top: 0;
@@ -337,12 +338,92 @@
     width: 100%;
     height: 100%;
     background: #ffdc85;
-    clip-path: circle(150px at 80% 20%);
+    clip-path: circle(170px at 80% 20%);
     transition: 0.5s ease-in-out;
 }
-.container .card:hover::before{
+.container .box:hover::before{
     clip-path: circle(300px at 80% -20%);
 }
+.container .box::after{
+    content: "SUBWAY";
+    position: absolute;
+    top: 65%;
+    left: 13%;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: rgba(255,255,255,0.1);
+}
+.container .box .imgBx{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 100%;
+    /* height: 220px; */
+    padding: 110px 0;
+    transition: 0.5s;
+}
+.container .box:hover .imgBx{
+    top: 12%;
+    transform: translateY(0%);
+}
+.container .box .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.container .box .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 35px;
+    transition: 1s;
+    z-index: 10;
+    color: #fff;
+}
+.container .box:hover .contentBx{
+    height: 200px;
+}
+.container .box .contentBx .info{
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.container .box .contentBx h2{
+    position: relative;
+    font-weight: 200;
+    font-size: 1.125rem;
+    padding-bottom: 10px;
+}
+.container .box .contentBx .info h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.container .box .contentBx .info span{
+    background-color: #009132;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+.container .box .contentBx .pay{
+    padding-top: 15px;    
+}
+.container .box .contentBx .pay p{
+    padding-bottom: 20px;
+}
+.container .box .contentBx .pay h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container .box .contentBx .pay span{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 
 
 /* 미디어쿼리 */
