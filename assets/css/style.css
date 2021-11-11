@@ -203,19 +203,19 @@
 }
 .img-ani{
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 5%;
+    left: 4%;
     animation: move 2s infinite;
 }
 @keyframes move{
     0%{
-        top: 10px;
+        top: 5%;
     }
     50%{
-        top: -10px;
+        top: -5%;
     }
     100%{
-        top: 10px;
+        top: 5%;
     }
 }
 .label{
@@ -394,6 +394,21 @@
     margin-top: 4%;
 }
 
+/* 다이어터 추천소스 */
+.sauce{
+    background-color: #F8C52D;
+}
+.sauce-tit{
+    font-size: 3rem;
+    color: #fff;
+}
+.sauce-box img{
+    background-color: #fff;
+    border-radius: 100%;
+    width: 90%;
+    padding: 15%;
+}
+
 /* 미디어쿼리 */
 @media (max-width:1440px){
     /* 인트로 */
@@ -465,7 +480,19 @@
         }
     }
 }
-
+@media (max-width: 992px){
+    /* 로스트치킨 */
+    .main-product h2 br{
+        display: block;
+    }
+    .main-product h2 {
+        line-height: 56px;
+    }
+    /* 라이트샌드위치 */
+    .ck-wrap {
+        padding: 70px 0 30px;
+    }
+}
 @media (max-width: 768px){
     /* 인트로 */
     .obj{
@@ -501,7 +528,7 @@
     }
     /* 로스트치킨 */
     .main-product {
-        padding: 75px 0 60px;
+        padding: 75px 0 50px;
     } 
     .new-text{
         padding-top: 48%;
@@ -510,27 +537,19 @@
         padding-top: 70px;
     }
     /* 라이트샌드위치 */
-    
-}
-@media (max-width: 992px){
-    /* 로스트치킨 */
-    .main-product h2 br{
-        display: block;
-    }
-    .main-product h2 {
-        line-height: 56px;
-    }
-}
-@media (min-width: 576px){
     .light-sand{
+        padding: 80px 0;
         background: none;
     }
-    .sand-wrap .box{
-        padding: 60% 0;
-        margin-top: 4%;
+    .sand-wrap .sand-tit{
+        padding: 0;
     }
     .sand-wrap .line2{
         margin-top: 0;
+    } 
+    .sand-wrap .box{
+        padding: 60% 0;
+        margin-top: 4%;
     }
 }
 @media (max-width: 541px){
@@ -596,6 +615,13 @@
         top: 3px;
         left: 3px;
     }
+    /* 라이트샌드위치 */
+    .sand-tit{
+        font-size: 2rem;
+    }    
+}
+@media (min-width: 576px){
+    
 }
 @media (max-width: 415px){
     /* 인트로 */
@@ -638,5 +664,12 @@
     }
     .roasted-ck .Kcal {
         font-size: 0.875rem;
+    }
+    /* 라이트샌드위치 */
+    .sand-wrap .sand-tit{
+        font-size: 1.5rem;
+    }
+    .container .box .contentBx .info h3 {
+        font-size: 1.125rem;
     }
 }
