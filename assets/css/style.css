@@ -403,6 +403,7 @@
     font-size: 3rem;
     color: #fff;
     padding-bottom: 30px;
+    letter-spacing: -1px;
 }
 .sauce-box{
     color: #fff;
@@ -753,6 +754,10 @@
     }
     .period {
         font-size: 0.875rem;
+    }
+    /* 앱다운 */
+    .app-down h3{
+        font-size: 2rem;
     }
 }
 @media (max-width: 320px){
