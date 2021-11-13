@@ -561,6 +561,16 @@
     }
 }
 @media (max-width: 767px){
+    /* 로스트치킨 */
+    .main-product {
+        padding: 75px 0 50px;
+    } 
+    .new-text{
+        padding-top: 48%;
+    }   
+    .ck-wrap {
+        padding-top: 70px;
+    }
     /* 앱다운 */
     .phone{
         display: none;
@@ -581,6 +591,7 @@
     .down-btn{
         text-align: center;
     }
+    
 }
 @media (max-width: 768px){
     /* 인트로 */
@@ -615,16 +626,8 @@
     .pro-text{
         padding: 0 0 5%;
     }
-    /* 로스트치킨 */
-    .main-product {
-        padding: 75px 0 50px;
-    } 
-    .new-text{
-        padding-top: 48%;
-    }   
-    .ck-wrap {
-        padding-top: 70px;
-    }
+    
+
     /* 라이트샌드위치 */
     .light-sand{
         padding: 80px 0;
@@ -714,6 +717,9 @@
         top: 3px;
         left: 3px;
     }
+    .img-ani {
+        left: 7%;
+    }
     /* 라이트샌드위치 */
     .sand-tit{
         font-size: 2rem;
@@ -761,6 +767,10 @@
     }
     .period {
         font-size: 0.875rem;
+    }
+    /* 로스트치킨 */
+    .img-ani {
+        left: 4%;
     }
     /* 앱다운 */
     .app-down h3{
