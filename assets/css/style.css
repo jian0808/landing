@@ -397,9 +397,14 @@
 /* 다이어터 추천소스 */
 .sauce{
     background-color: #F8C52D;
+    padding: 100px 0;
 }
 .sauce-tit{
     font-size: 3rem;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.sauce-box{
     color: #fff;
 }
 .sauce-box img{
@@ -407,6 +412,63 @@
     border-radius: 100%;
     width: 90%;
     padding: 15%;
+    margin-bottom: 20px;
+}
+.sauce-box h4{
+    background-color: #EF7D03;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.250rem;
+}
+.sauce-box p{
+    font-weight: 200;
+    padding-top: 7px;
+}
+.sauce-box span{
+    display: block;
+    font-size: 1.250rem;
+    padding-top: 15px;
+}
+
+/* 앱다운 */
+.app-down{
+    background-color: #A8CD3F;
+    padding: 100px 0;
+}
+.phone img{
+    width: 90%;
+}
+.app-down h3{
+    font-size: 3rem;
+    color: #00572C;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    padding-bottom: 8%;
+}
+.app-benefit{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.app-benefit li{
+    margin: 3% 0;
+}
+.app-noti{
+    color: rgba(0,0,0,.6);
+    font-size: 0.875rem;
+    padding-top: 10%;
+}
+.app-noti li{
+    margin: 2% 0;
+}
+.down-btn{
+    padding-top: 5%;
+}
+.down-btn a{
+    display: inline;
+    margin-right: 20px;
+}
+.phone-mo{
+    display: none;
 }
 
 /* 미디어쿼리 */
@@ -493,6 +555,25 @@
         padding: 70px 0 30px;
     }
 }
+@media (max-width: 767px){
+    /* 앱다운 */
+    .phone{
+        display: none;
+    }
+    .phone-mo{
+        display: block;
+        text-align: center;
+    }
+    .phone-mo img{
+        width: 70%;
+    }
+    .app-down h3{
+        text-align: center;
+    }
+    .app-benefit{
+        padding-top: 5%;
+    }
+}
 @media (max-width: 768px){
     /* 인트로 */
     .obj{
@@ -550,6 +631,16 @@
     .sand-wrap .box{
         padding: 60% 0;
         margin-top: 4%;
+    }
+    /* 다이어터 추천소스 */
+    .sauce{
+        padding: 80px 0 ;
+    }
+    .sauce-list{
+        width: 50%;
+    }
+    .sauce-box {
+        margin-top: 30px;
     }
 }
 @media (max-width: 541px){
@@ -618,11 +709,20 @@
     /* 라이트샌드위치 */
     .sand-tit{
         font-size: 2rem;
-    }    
+    }   
+    /* 다이어터 추천소스  */
+    .sauce-tit {
+        font-size: 2rem;
+    }
+    /* 앱다운 */
+    .app-down{
+        padding: 80px 0;
+    }
+    .app-down h3 {
+        font-size: 2.5rem;
+    }
 }
-@media (min-width: 576px){
-    
-}
+
 @media (max-width: 415px){
     /* 인트로 */
     .intro h1 img {
