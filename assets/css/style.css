@@ -452,11 +452,13 @@
 }
 .app-benefit li{
     margin: 3% 0;
+    letter-spacing: -1px;
 }
 .app-noti{
     color: rgba(0,0,0,.6);
     font-size: 0.875rem;
     padding-top: 10%;
+    letter-spacing: -1px;
 }
 .app-noti li{
     margin: 2% 0;
@@ -464,9 +466,11 @@
 .down-btn{
     padding-top: 5%;
 }
-.down-btn a{
+/* .down-btn a{
     display: inline;
-    margin-right: 20px;
+} */
+.down-btn a img{
+    width: 90%;
 }
 .phone-mo{
     display: none;
@@ -573,6 +577,9 @@
     }
     .app-benefit{
         padding-top: 5%;
+    }
+    .down-btn{
+        text-align: center;
     }
 }
 @media (max-width: 768px){
