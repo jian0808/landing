@@ -8,6 +8,7 @@
     padding: 140px 0 220px;
     position: relative;
 }
+
 .intro h1 img{
     width: 200px;
 }
@@ -16,6 +17,20 @@
     color: #FFC20D;
     letter-spacing: -4px;
     padding-top: 60px;
+}
+.content-intro h2,
+.content-intro p{
+    animation: title-ani 1.5s ease-in-out;
+}
+@keyframes title-ani{
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .intro p{
     font-size: 3rem;
@@ -591,27 +606,8 @@
     .down-btn{
         text-align: center;
     }
-    
 }
-@media (max-width: 768px){
-    /* 인트로 */
-    .obj{
-        display: none;
-    }
-    .intro{
-        background: url('../images/intro_bg.png') no-repeat center;
-        background-size: cover;
-        padding: 0;
-    }
-    .content-intro{
-        padding: 15% 0 25%;
-    }
-    .intro h2 {
-        font-size: 3.375rem;
-    }
-    .intro p {
-        font-size: 1.688rem;
-    }
+@media (max-width: 767px){
     /* 프로모션 */
     .pro-wrap{
         flex-direction: column-reverse;
@@ -626,7 +622,38 @@
     .pro-text{
         padding: 0 0 5%;
     }
-    
+}
+@media (max-width: 768px){
+    /* 인트로 */
+    /* .obj{
+        display: none;
+    } 
+    .intro{
+        background: url('../images/intro_bg.png') no-repeat center;
+        background-size: cover;
+        padding: 0;
+    }  */
+    .content-intro{
+        padding: 8% 0 5%;
+    }
+
+    .obj{
+        animation: none;
+    }
+    .obj01 {
+        left: -80px;
+    }
+    .obj>img {
+        width: 70%;
+    }
+
+
+    .intro h2 {
+        font-size: 3.375rem;
+    }
+    .intro p {
+        font-size: 1.688rem;
+    }
 
     /* 라이트샌드위치 */
     .light-sand{
@@ -656,11 +683,21 @@
 }
 @media (max-width: 541px){
     /* 인트로 */
-    .content-intro {
-        padding: 12% 0 21%;
-    }
     .intro h1 img {
         width: 150px;
+    }
+    .content-intro {
+        padding: 8% 0 0%;
+    }
+    .obj>img{
+        width: 60%;
+    }
+    .obj03{
+        left: -260px;
+    }
+    .obj04 {
+        bottom: -185px;
+        right: -40px;
     }
     .intro h2 {
         font-size: 2.5rem;
@@ -739,6 +776,30 @@
 
 @media (max-width: 415px){
     /* 인트로 */
+    .intro{
+        padding: 0;
+    }
+    .content-intro {
+        padding: 35% 0 40%;
+    }
+    .obj>img {
+        width: 45%;
+    }
+    .obj01 {
+        left: -130px;
+    }
+    .obj02 {
+        top: -105px;
+        right: -100px;
+    }
+    .obj03 {
+        left: -290px;
+    }
+    .obj04 {
+        bottom: -150px;
+        right: -75px;
+    }
+
     .intro h1 img {
         width: 100px;
     }
