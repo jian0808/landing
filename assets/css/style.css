@@ -491,6 +491,18 @@
     display: none;
 }
 
+/* 모달 팝업 */
+.modal-dialog {
+    margin: 10% auto;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-body{
+    padding: 20% 0;
+    text-align: center;
+}
+
 /* 미디어쿼리 */
 @media (max-width:1440px){
     /* 인트로 */
