@@ -473,17 +473,23 @@
     color: rgba(0,0,0,.6);
     font-size: 0.875rem;
     padding-top: 10%;
-    letter-spacing: -1px;
+    letter-spacing: -1px;    
 }
 .app-noti li{
     margin: 2% 0;
+    padding-left: 10px;
+    position: relative;
+    line-height: 1.3;
+}
+.app-noti li::before{
+    content: "*";
+    position: absolute;
+    top: 4px;
+    left: 0;
 }
 .down-btn{
     padding-top: 5%;
 }
-/* .down-btn a{
-    display: inline;
-} */
 .down-btn a img{
     width: 90%;
 }
